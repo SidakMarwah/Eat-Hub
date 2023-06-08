@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io Eat-Hub/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io Eat-Hub/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io Eat-Hub/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Eat-Hub</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            background-color: #121212;
+        }
+        header{
+            color: #fff;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 50px;
+            background-color: #1a1a1a;
+        }
+        header h1{
+            font-size: 60px;
+            padding: 10px;
+        }
+        header span svg{
+            fill: #fff;
+            height: 40px;
+        }
+        header p{
+            word-spacing: 3px;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        nav span{
+            padding: 0 30px;
+            /* margin-left: 20px; */
+        }
+        nav{
+            background-color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        nav span svg {
+            fill: #fff;
+            height: 25px;
+        }
+        nav ul li a svg{
+            fill: #fff;
+            height: 20px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            padding: 30px 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        nav ul li:hover{
+            background-color: #303030;
+        }
+        div{
+            width: 300px;
+            display: flex;
+            margin: 40px 50px;
+            flex-direction: column;
+            box-shadow: 0 0 10px 5px #222;
+            background-color: #1a1a1a;
+        }
+        div img{
+            width: 100%;
+            background-color: #121212;
+        }
+        div p{
+            color: #fff;
+            font-family: sans-serif;
+            line-height: 30px;
+            word-spacing: 3px;
+            margin: 15px 10px;
+            letter-spacing: 2px;
+        }
+        div a{
+            background-color: #25865e;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            padding: 15px;
+            font-size: 20px;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            margin-top: auto;
+        }
+        div a:hover{
+            background-color: #1d6447;
+        }
+        #i1{
+            margin: 20px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media screen and (max-width:650px) {
+            nav{
+                flex-direction: column;
+            }
+            nav ul{
+                flex-direction: column;
+                width: 100%;
+                padding-left: 0;
+            }
+            nav  span svg{
+                margin: 30px  0;
+            }
+            header h1{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Eat-Hub <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 0C19.1 0 7.4 7.8 2.4 19.8s-2.2 25.7 6.9 34.9L224 269.3V448H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H288V269.3L502.6 54.6c9.2-9.2 11.9-22.9 6.9-34.9S492.9 0 480 0H32zM173.3 128l-64-64H402.7l-64 64H173.3z"/></svg></span></h1>
+    <p>By Sidak Marwah</p>
+    </header>
+    <nav>
+        <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 0C19.1 0 7.4 7.8 2.4 19.8s-2.2 25.7 6.9 34.9L224 269.3V448H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h96 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H288V269.3L502.6 54.6c9.2-9.2 11.9-22.9 6.9-34.9S492.9 0 480 0H32zM173.3 128l-64-64H402.7l-64 64H173.3z"/></svg>
+        </span>
+        <ul>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                </a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="i1">
+        <div>
+            <img src="https://i.pinimg.com/736x/5c/b3/9b/5cb39bb0b3c34fe6fd5736d8a7d629af--dominos-logo-design.jpg" alt="Domino's">
+            <p>Domino's Pizza Inc (Domino's) is a pizza restaurant chain. It provides pizza delivery and carryout services as well as dine-in services through its restaurants.</p>
+            <a href="https://www.dominos.co.in/" target="_blank">Visit</a>
+        </div>
+        <div>
+            <img src="https://www.pizzahut.co.uk/order/images/icons/logo-300x300.ed09f0955306cb0be42c35092733b5c2.png" alt="">
+            <p>Pizza Hut is an American multinational restaurant chain and international franchise founded in 1958 in Wichita, Kansas by Dan and Frank Carney. They serve their signature pan pizza and other dishes including pasta, breadsticks and dessert at dine-in, take-out and delivery chain locations</p>
+            <a href="https://www.pizzahut.co.in/" target="_blank">Visit</a>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/McDonald%27s_SVG_logo.svg/3000px-McDonald%27s_SVG_logo.svg.png" alt="McDonald's">
+            <p>McDonald's Corp (McDonald's) is a food service retail chain operator. The company operates and franchises McDonald's restaurants that serve a locally relevant menu of food and beverages.</p>
+            <a href="https://www.mcdonalds.com/us/en-us.html" target="_blank">Visit</a>
+        </div>
+        <div>
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/starbucks-coffee-logo-png-transparent.png" alt="Starbucks">
+            <p>Starbucks Corp (Starbucks) is a specialty coffee retailer. It roasts, markets, and retails specialty coffee. The company, through its stores, offers several blends of coffee, handcrafted beverages, merchandise, and food items.</p>
+            <a href="https://www.starbucks.in/" target="_blank">Visit</a>
+        </div>
+        <div>
+            <img src="https://www.uengage.in/images/addo/logos/logo-5-1600769708.png" alt="La Pino'Z">
+            <p>The story of India's fastest growing pizza place started back in 2011 when Sanam Kapoor opened his very first pizzeria in his hometown Chandigarh. The biggest Pizza on the menu is the 18"!. La Pino'Z Pizza's tagline is “The Giant Pizza Slice”.</p>
+            <a href="https://lapinozpizza.in/" target="_blank">Visit</a>
+        </div>
+        <div>
+            <img src="https://logos-download.com/wp-content/uploads/2016/03/KFC_Logo_2006.png" alt="KFC">
+            <p>KFC is a global chicken restaurant brand with a rich, decades-long history of success and innovation. It all started with one cook, Colonel Harland Sanders, who created a finger lickin' good recipe more than 75 years ago—a list of 11 secret herbs and spices scratched out on the back of his kitchen door.</p>
+            <a href="https://www.kfc.com/" target="_blank">Visit</a>
+        </div>
+    </section>
+</body>
+</html>
